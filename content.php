@@ -9,8 +9,8 @@ id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 ?>
 <article>
 				<?php
-					if ( is_single() ) : // if it´s a single post put
-					the_title( '<h1>', '</h1>' ); // the title in h1 tags
+					if ( is_single() ) : // if it´s a single post put the title in h1 tags
+					the_title( '<h1>', '</h1>' ); 
 					else : // if not put
 					the_title( sprintf( '<h2><a href="%s">', esc_url( get_permalink() ) ), '</a></h2>' ); // the title in h2 tags with the permalink
 					endif;
