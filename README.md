@@ -1,1 +1,1 @@
-My little WordPress Theme shows you how to remove everything from WordPress and is a little safe haven for WordPress beginners, haters and theme creators. 
+My little WordPress Theme shows you how to remove everything from WordPress and is a little safe haven for WordPress beginners, haters and theme creators. THIS IS WORK IN PROGRESS!
