@@ -1,0 +1,16 @@
+/*
+    Theme Name: Stripped
+    Theme URI: http://wwww.wp-stripped.com
+    Author: Phillip Roth
+    Author URI: https://www.philliproth.de
+    Description: Stripped includes only vital functions and deletes everything that's not needed.
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: stripped, naked, bare
+    Text Domain: stripped
+*/
+
+body {
+	font-family: sans-serif;
+}
