@@ -1,6 +1,6 @@
 <?php
 
-// STRIPPED FUNCTIONS AND DEFINITIONS
+// STRIPPED THEME FUNCTIONS AND DEFINITIONS
 
 
 
@@ -29,7 +29,7 @@ load_theme_textdomain( 'stripped', get_template_directory() . '/languages' );
 		'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 	) );
 
-//Enable Post Formats
+//Enable Post Formats; These haven´t been added but you can!
 	add_theme_support( 'post-formats', array(
 		'aside', 'image', 'video', 'quote', 'link', 'gallery', 'status', 'audio', 'chat'
 	) );
@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'stripped_setup' );
 // Enable Thumbnails for Posts
 add_theme_support('post-thumbnails');  
 
-// // SETUP
+// // SETUP END
 
 
 
@@ -223,7 +223,7 @@ function stripped_comments($arg) {
 
   	'author' =>
    	 '<p><label for="author">' . __( 'Name', 'stripped' ) . '</label> ' . // default in <p>-tag: class="comment-form-author"
-   	 ( $req ? '<span class="required">*</span>' : '' ) . // needed for validation
+   	 ( $req ? '<span class="required">*</span>' : '' ) . // class required is needed for validation
    	 '<input name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . //default in <input>-tag: id="author"
    	 '" size="30"' . $aria_req . ' /></p>',
 
@@ -261,10 +261,10 @@ add_filter('comment_form_defaults', 'stripped_comments');
 function stripped_widgets_init() {
 	register_sidebar( array(
 		'name'          => __( 'Widget Area', 'stripped' ),
-		'id'            => 'sidebar-1',
+		'id'            => 'yoursidebarname',
 		'description'   => __( 'Add widgets here to appear in your sidebar.', 'stripped' ),
 
-/* If you want dem nasty classes put this inside the aside tag:
+/* If you want to display classes put this inside the aside tag:
 id="%1$s" class="widget %2$s"
 */
 		'before_widget' => '',
@@ -287,7 +287,8 @@ function custom_gallery($attr) {
 	$post = get_post();
 	static $instance = 0;
 	$instance++;
-	# hard-coding these values so that they can't be broken
+	
+	// values are hard coded
 
 	$attr['columns'] = 1;
 	$attr['size'] = 'full';
@@ -295,12 +296,12 @@ function custom_gallery($attr) {
 	$attr['orderby'] = 'post__in';
 	$attr['include'] = $attr['ids'];	
 	
-	#Allow plugins/themes to override the default gallery template.
+	// Plugins and themes can override default gallery 
 
 	$output = apply_filters('post_gallery', '', $attr);
 	if ( $output != '' )
 		return $output;
-	# We're trusting author input, so let's at least make sure it looks like a valid orderby statement
+
 	if ( isset( $attr['orderby'] ) ) {
 		$attr['orderby'] = sanitize_sql_orderby( $attr['orderby'] );
 		if ( !$attr['orderby'] )
