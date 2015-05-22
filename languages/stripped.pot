@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: PHILLIP ROTH <phillip@philliproth.de>\n"
 "Language-Team: LANGUAGE <phillip@philliproth.de>\n"
 
 #: 404.php:17
