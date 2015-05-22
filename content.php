@@ -1,9 +1,9 @@
 <?php
 /**
- * Default Content Template
+ * Default Content Template, also for single posts
  */
 /*
-Put this inside the article Tag if you want to show id and classes:
+Put this inside the article Tag if you want to display id and classes:
 id="post-<?php the_ID(); ?>" <?php post_class(); ?> 
 */
 ?>

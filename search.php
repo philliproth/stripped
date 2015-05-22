@@ -9,10 +9,10 @@ get_header(); ?>
 			<?php
 			while ( have_posts() ) : the_post(); ?>
 				<?php
-				get_template_part( 'content', 'search' );
+				get_template_part( 'content', 'search' ); // display content search template
 			endwhile;
 		      else :
-			     get_template_part( 'content', 'none' );
+			     get_template_part( 'content', 'none' ); // if there is no post get content none template
 		      endif;
             ?>
 
