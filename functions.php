@@ -281,7 +281,7 @@ add_action( 'widgets_init', 'stripped_widgets_init' );
 // GALLLERY custom output
 
 remove_shortcode('gallery', 'gallery_shortcode');
-add_shortcode('gallery', 'custom_gallery');
+add_shortcode('gallery', 'stripped_custom_gallery');
 
 function stripped_custom_gallery($attr) {
 	$post = get_post();
