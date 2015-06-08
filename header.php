@@ -32,7 +32,7 @@
     <nav>
     	<ul>
     		<?php // implements custom menu from functions.php
- 				wp_nav_menu( array( 'walker' 			=> new Nav_Menu(),
+ 				wp_nav_menu( array( 'walker' 			=> new stripped_nav_menu(),
 									'items_wrap'        => '%3$s',
 									'container'     	=> 'false',
 									'theme_location'  	=> 'primary',
