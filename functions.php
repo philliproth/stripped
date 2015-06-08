@@ -89,21 +89,21 @@ remove_action( 'wp_head', 'wp_generator' ); // Displays the XHTML generator that
 
 //Dequeue the Emoji scripts & styles from head
 
-function disable_emoji_dequeue_script() {
+function stripped_disable_emoji_dequeue_script() {
     wp_dequeue_script( 'emoji' );
 }
-add_action( 'wp_print_scripts', 'disable_emoji_dequeue_script', 100 );
+add_action( 'wp_print_scripts', 'stripped_disable_emoji_dequeue_script', 100 );
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 
 
 // Remove recent comments style, because of this: https://core.trac.wordpress.org/ticket/11928 we have to do this:
 
-function my_remove_recent_comments_style() {
+function stripped_remove_recent_comments_style() {
 	global $wp_widget_factory;
 	remove_action('wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style'));
 }
-add_action('widgets_init', 'my_remove_recent_comments_style');
+add_action('widgets_init', 'stripped_remove_recent_comments_style');
 
 
 
@@ -112,7 +112,7 @@ add_action('widgets_init', 'my_remove_recent_comments_style');
 // We create a custom menu walker for a simple ul/li-list
 
 
-class Nav_Menu extends Walker {
+class stripped_nav_menu extends Walker {
     var $tree_type = array( 'post_type', 'taxonomy', 'custom' );
     var $db_fields = array( 'parent' => 'menu_item_parent', 'id' => 'db_id' );
     function start_lvl(&$output, $depth) {
@@ -158,12 +158,12 @@ class Nav_Menu extends Walker {
 
 // Remove classes from avatar; Gravatar needs class="avatar" to work properly so this has to stay
 
-function change_avatar_css($class) {
+function stripped_change_avatar_css($class) {
 $class = str_replace("photo", "", $class) ;
 $class = str_replace("avatar-32", "", $class) ; //32 is the default avatar size
 return $class;
 }
-add_filter('get_avatar','change_avatar_css');
+add_filter('get_avatar','stripped_change_avatar_css');
 
 
 // Remove comment classes with custom comment walker
@@ -283,7 +283,7 @@ add_action( 'widgets_init', 'stripped_widgets_init' );
 remove_shortcode('gallery', 'gallery_shortcode');
 add_shortcode('gallery', 'custom_gallery');
 
-function custom_gallery($attr) {
+function stripped_custom_gallery($attr) {
 	$post = get_post();
 	static $instance = 0;
 	$instance++;
