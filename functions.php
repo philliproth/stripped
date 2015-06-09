@@ -21,7 +21,7 @@ load_theme_textdomain( 'stripped', get_template_directory() . '/languages' );
 
 // This theme uses wp_nav_menu()
 	register_nav_menus( array(
-		'primary' => __( 'Primary Menu', 'stripped' ) // One Menu not enough? Copy and Ppaste these three lines if you need more!
+		'primary' => __( 'Primary Menu', 'stripped' ) // One Menu not enough? Copy and Paste these three lines if you need more!
 	) );
 
 // Output valid HTML5
