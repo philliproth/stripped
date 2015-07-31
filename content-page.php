@@ -13,7 +13,7 @@ id="post-<?php the_ID(); ?>" <?php post_class(); ?
 
 <article>
 
-	<?php the_title( '<h1>', '</h1>' ); ?>
+    <a href="<?php the_permalink() ?>"><?php the_title( '<h1>', '</h1>' ); ?></a>
     
     <?php _e('Author','stripped'); ?>: <a href="<?php the_author_url(); ?>"><?php the_author(); ?></a>
 
