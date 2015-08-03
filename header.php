@@ -23,12 +23,10 @@
 */
 ?>
 <body>
-
 	<header>
 		<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); // show blog name from settings?></a></h1>
 		<p><?php echo get_bloginfo ( 'description' ); // show blog description from settings ?></p>
 	</header>
-    
     <nav>
     	<ul>
     		<?php // implements custom menu from functions.php
@@ -40,5 +38,4 @@
 			?>
         </ul>
     </nav>
-
 	<div> <!-- CONTENT -->
