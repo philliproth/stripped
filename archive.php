@@ -11,7 +11,6 @@ get_header(); ?>
 					the_archive_description( '<div>', '</div>' ); //show archive decription
 				?>
 
-
 			<!-- THE LOOP -->
 
 			<?php
