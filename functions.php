@@ -74,6 +74,8 @@ add_filter("style_loader_tag", function($tag){
 
 // HEAD Dequeue scripts & Links from head
 
+remove_action( 'wp_head', 'rest_output_link_wp_head', 10 ); // Remove REST-API-Link
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 ); // Remove oEmbed
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0); // Displays the WP Shortlink
 remove_action( 'wp_head', 'rel_canonical'); // Displays the Canonical Link
 remove_action( 'wp_head', 'feed_links_extra', 3 ); // Displays the links to the extra feeds such as category feeds
@@ -363,4 +365,3 @@ function stripped_custom_gallery($attr) {
 	return $output;
 
 }
-
