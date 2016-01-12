@@ -8,7 +8,7 @@ get_header(); ?>
 
 				<?php
 					the_archive_title( '<h2>', '</h2>' ); // show archive title
-					the_archive_description( '<div>', '</div>' ); //show archive decription
+					the_archive_description( '<h3>', '</h3>' ); //show archive decription
 				?>
 
 			<!-- THE LOOP -->

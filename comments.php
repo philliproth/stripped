@@ -14,9 +14,9 @@ if ( post_password_required() ) { // check if password is required
 					number_format_i18n( get_comments_number() ), get_the_title() );
 	?>
 
-		<div>
+		<section>
 			<?php wp_list_comments( 'type=comment&callback=strippedtheme_comment' ); //custom stripped comments in functions.php?>
-		</div>
+		</section>
 
 
 	<?php endif;?>

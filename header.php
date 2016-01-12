@@ -38,4 +38,4 @@
 			?>
         </ul>
     </nav>
-	<div> <!-- CONTENT -->
+	<section> <!-- CONTENT -->

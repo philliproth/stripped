@@ -53,8 +53,9 @@ add_theme_support('post-thumbnails');
 
 function stripped_scripts() {
 
-	//Main Stylesheet style.css	in your theme
-	wp_enqueue_style( 'stripped-style', get_stylesheet_uri() );
+    $parent_style = 'parent-style';
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+
 
 	// Comments Script threaded wp-includes/js/comment-reply.min.js
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

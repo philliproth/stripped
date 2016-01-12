@@ -4,10 +4,10 @@
  */
 ?>
 
-		<div>
+		<section>
         	<p>This is the sidebar area for widgets.</p>
 		<?php get_sidebar(); ?>
-</div>
+</section>
     
     
 		<footer>	
@@ -15,7 +15,7 @@
 		</footer>
 
 
-	</div> <!-- CONTENT CLOSED -->
+	</section> <!-- CONTENT CLOSED -->
 
 <?php wp_footer(); ?>
 
