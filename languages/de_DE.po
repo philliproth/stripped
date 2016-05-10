@@ -1,0 +1,227 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Stripped v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2015-03-17 18:42:30+0000\n"
+"Last-Translator: philliproth <phillip@philliproth.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:17
+#@ stripped
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oh - Die Seite wurde nicht gefunden!"
+
+#: 404.php:21
+#@ stripped
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr ""
+
+#: archive.php:30
+#: index.php:23
+#@ stripped
+msgid "Previous page"
+msgstr ""
+
+#: archive.php:31
+#: index.php:24
+#@ stripped
+msgid "Next page"
+msgstr ""
+
+#: archive.php:32
+#: content-link.php:40
+#: content.php:34
+#: image.php:63
+#: index.php:25
+#@ stripped
+msgid "Page"
+msgstr ""
+
+#: author-bio.php:7
+#@ stripped
+msgid "Published by"
+msgstr ""
+
+#: author-bio.php:22
+#, php-format
+#@ stripped
+msgid "View all posts by %s"
+msgstr ""
+
+#: comments.php:13
+#, php-format
+#@ stripped
+msgctxt "comments title"
+msgid "One comment for &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments for &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:32
+#@ stripped
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: %s: Name of current post
+#: content-link.php:31
+#: content.php:25
+#, php-format
+#@ stripped
+msgid "Continue reading %s"
+msgstr ""
+
+#: content-link.php:36
+#: content.php:30
+#: image.php:59
+#@ stripped
+msgid "Pages:"
+msgstr ""
+
+#: content-link.php:56
+#: content-page.php:22
+#: content-search.php:28
+#: content-search.php:33
+#: content.php:45
+#: image.php:71
+#@ stripped
+msgid "Edit"
+msgstr ""
+
+#: content-none.php:15
+#@ stripped
+msgid "Nothing Found"
+msgstr ""
+
+#: content-none.php:22
+#, php-format
+#@ stripped
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:26
+#@ stripped
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: content-none.php:31
+#@ stripped
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: content-page.php:18
+#: content.php:20
+#@ stripped
+msgid "Author"
+msgstr ""
+
+#: functions.php:24
+#@ stripped
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:177
+#, php-format
+#@ default
+msgid "<cite>%s</cite> <span>says:</span>"
+msgstr ""
+
+#: functions.php:180
+#@ default
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#. translators: 1: date, 2: time
+#: functions.php:187
+#, php-format
+#@ default
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: functions.php:187
+#@ default
+msgid "(Edit)"
+msgstr ""
+
+#: functions.php:213
+#@ stripped
+msgid "Name"
+msgstr ""
+
+#: functions.php:219
+#@ stripped
+msgid "Email"
+msgstr ""
+
+#: functions.php:225
+#@ stripped
+msgid "Website"
+msgstr ""
+
+#: functions.php:230
+#@ default
+msgctxt "stripped"
+msgid "Comments"
+msgstr ""
+
+#: functions.php:232
+#@ stripped
+msgid "Text after the comment form"
+msgstr ""
+
+#: functions.php:251
+#@ stripped
+msgid "Widget Area"
+msgstr ""
+
+#: functions.php:253
+#@ stripped
+msgid "Add widgets here to appear in your sidebar."
+msgstr ""
+
+#: image.php:24
+#@ stripped
+msgid "Previous Image"
+msgstr ""
+
+#: image.php:24
+#@ stripped
+msgid "Next Image"
+msgstr ""
+
+#: image.php:84
+#, php-format
+#@ stripped
+msgctxt "Parent post link"
+msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
+msgstr ""
+
+#: search.php:9
+#, php-format
+#@ stripped
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:16
+#@ stripped
+msgid "Next Post: "
+msgstr ""
+
+#: single.php:18
+#@ stripped
+msgid "Previous Post: "
+msgstr ""
+

@@ -55,7 +55,7 @@ function stripped_scripts() {
 
     $parent_style = 'parent-style';
     wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-
+    
 
 	// Comments Script threaded wp-includes/js/comment-reply.min.js
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -98,6 +98,12 @@ function stripped_disable_emoji_dequeue_script() {
 add_action( 'wp_print_scripts', 'stripped_disable_emoji_dequeue_script', 100 );
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 ); 
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+//Deregister embed functionality
+
+function block_wp_embed() {
+    wp_deregister_script('wp-embed'); }
+add_action('init', 'block_wp_embed');
 
 
 // Remove recent comments style, because of this: https://core.trac.wordpress.org/ticket/11928 we have to do this:
