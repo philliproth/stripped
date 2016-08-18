@@ -72,6 +72,16 @@ add_filter("style_loader_tag", function($tag){
     return str_replace("id='stripped-style-css' " ,'',  $tag);
 });
 
+//remove DNS Prefetch
+
+function stripped_resource_hints( $hints, $relation_type ) {
+    if ( 'dns-prefetch' === $relation_type ) {
+        return array_diff( wp_dependencies_unique_hosts(), $hints );
+    }
+    return $hints;
+}
+add_filter( 'wp_resource_hints', 'stripped_resource_hints', 10, 2 );
+
 
 // HEAD Dequeue scripts & Links from head
 
@@ -260,17 +270,6 @@ function stripped_comments($arg) {
 	}
 	 
 add_filter('comment_form_defaults', 'stripped_comments');
-
-//remove DNS Prefetch
-
-function stripped_resource_hints( $hints, $relation_type ) {
-    if ( 'dns-prefetch' === $relation_type ) {
-        return array_diff( wp_dependencies_unique_hosts(), $hints );
-    }
-    return $hints;
-}
- 
-add_filter( 'wp_resource_hints', 'stripped_resource_hints', 10, 2 );
 
 
 
